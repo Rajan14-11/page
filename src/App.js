@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import DepositTokens from "./layout/DepositTokens";
+import MainLayout from "./layout/MainLayout";
+
+//Todo:Reacter Router dom setup for routing.
+//Mainlayout includes the layout having sidebar and responsive code for sidebar. It takes a children and render it.
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="h-full w-full">
+      <MainLayout>
+        <DepositTokens/>
+      </MainLayout>
     </div>
   );
 }
